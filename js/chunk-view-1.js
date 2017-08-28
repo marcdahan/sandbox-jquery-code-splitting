@@ -1,5 +1,4 @@
 var hello = "hello";
-$(".text1").text(hello);
 
 function loadScript(url) {
     var script = document.createElement("script"); //Make a script DOM node
@@ -9,6 +8,7 @@ function loadScript(url) {
 
 
 $(document).ready(function(){
+    $(".text1").text(hello);
     $("button.click-me").on("click", function(){
         loadScript("js/chunk-view-2.js");
     });
